@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-10-17T13:22:01.778067-04:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "command": [
+    "./build/imagefilter",
+    "benchmark",
+    "--threads",
+    "1,2,4,8,10",
+    "--runs",
+    "9",
+    "--warmup",
+    "2",
+    "--radius",
+    "5",
+    "--sigma",
+    "2",
+    "--csv",
+    "results/benchmark.csv",
+    "--generate",
+    "3840x2160"
+  ],
+  "method": "alternating paired runs; ratio of medians; byte-exact output verification",
+  "timing_includes": [
+    "filter kernels",
+    "kernel setup",
+    "buffer allocations",
+    "task dispatch and barriers"
+  ],
+  "timing_excludes": [
+    "input generation/decoding",
+    "encoding/disk I/O",
+    "pool creation/destruction",
+    "equality/checksum"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix",
+  "hardware": {
+    "machine_model": "Mac16,1",
+    "machine_name": "MacBook Pro",
+    "chip_type": "Apple M4",
+    "number_processors": "proc 10:0:4:6",
+    "physical_memory": "16 GB"
+  },
+  "completed_at": "2026-10-17T13:23:04.898676-04:00",
+  "exit_code": 0,
+  "publication_note": "Local executable and output paths were replaced with repository-relative paths. Timing samples are unchanged."
+}

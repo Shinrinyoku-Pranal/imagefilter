@@ -1,0 +1,10 @@
+{
+  "include/imagefilter/filters.hpp": "bad3cde4447b27ae274ad95dffc991da5ffc00f49f0a0e055064c6508142b683",
+  "include/imagefilter/image.hpp": "96cbb6c22c636700d4add951958cb5a70f6238e08d28ad9dff4e8f380e0b74e2",
+  "include/imagefilter/thread_pool.hpp": "b5f16cc64c6da9f5ea4ab8553591e8b8b3035fb910bbcd8a37f844e58337024d",
+  "src/codecs.cpp": "8e3267b6b9e874317aae82a0acded6b4387c588d6ed61548634c4435fa964ee0",
+  "src/filters.cpp": "7d1a2753168eb663acb6bed693b0a72ed0b74f5a7febae59ff53a97b5645aba2",
+  "src/image.cpp": "ba029c8d42117031995117e9c4cad2c42f7bace4dd4dc83a0db5fb9ff2163a40",
+  "src/main.cpp": "31b5e14b29a4337838583fca7fe5c035026b544a868e95543a1b691b261cf8c3",
+  "src/thread_pool.cpp": "46eb650fcf2cd2d748cfa6f9ab7723fd4ae89c01e45378eab4f7c6706beff62f"
+}

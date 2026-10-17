@@ -1,0 +1,8 @@
+{
+  "binary": "build/imagefilter",
+  "sha256": "5c6719dcc0ca67a25ee337ac7e71bc73fb9b9cd2cd7b8f47f781498a34c28169",
+  "build_command": "make -B -j4 test",
+  "compiler_flags": "-O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -pthread",
+  "linker_flags": "-pthread",
+  "architecture": "macOS arm64"
+}

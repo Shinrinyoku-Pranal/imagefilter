@@ -1,0 +1,17 @@
+# Build output
+/build*/
+/cmake-build*/
+*.o
+*.d
+*.exe
+
+# New benchmark runs and generated images
+/results/
+
+# Python and editor files
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.idea/
+.vscode/

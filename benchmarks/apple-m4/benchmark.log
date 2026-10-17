@@ -1,0 +1,29 @@
+Input: 3840x2160 RGB, checksum 10062147269563065372 (deterministic generated image)
+Reported hardware concurrency: 10
+Runs: 9, warmups: 2, blur radius: 5, sigma: 2, resize: 1920x1080
+Median processing times include allocations; exclude image I/O and pool startup.
+Every timed output is compared byte for byte outside the timed region.
+
+Filter        Workers     Serial ms       Pool ms     Speedup  Efficiency
+blur                1       269.388       271.282      0.993x     99.302%
+edge                1        21.375        21.512      0.994x     99.360%
+resize              1        12.415        12.287      1.010x    101.039%
+pipeline            1       302.064       304.885      0.991x     99.075%
+blur                2       267.354       138.415      1.932x     96.577%
+edge                2        21.501        11.467      1.875x     93.750%
+resize              2        12.115         6.143      1.972x     98.612%
+pipeline            2       300.748       155.169      1.938x     96.910%
+blur                4       265.952        71.600      3.714x     92.860%
+edge                4        21.256         6.787      3.132x     78.300%
+resize              4        12.210         3.155      3.870x     96.739%
+pipeline            4       301.325        80.992      3.720x     93.011%
+blur                8       266.474        43.272      6.158x     76.977%
+edge                8        21.363         5.298      4.032x     50.399%
+resize              8        12.363         2.159      5.726x     71.581%
+pipeline            8       302.147        50.652      5.965x     74.565%
+blur               10       267.932        37.410      7.162x     71.621%
+edge               10        21.410         5.039      4.249x     42.485%
+resize             10        12.210         1.906      6.407x     64.070%
+pipeline           10       300.257        43.859      6.846x     68.459%
+
+Saved summary and raw samples: results/benchmark.csv
